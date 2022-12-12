@@ -1,0 +1,155 @@
+body{
+  background-color: rgb(59, 87, 248);
+  font: normal 18px arial;
+}
+
+header{
+  color:aliceblue;
+  text-align: center;
+}
+
+input#txtano{
+  font: normal 18px Arial;
+  color: aliceblue;
+  width: 60px;
+  height: 25px;
+  background-color: #2e2f30;
+  border: 3px solid rgb(10, 10, 10);
+  transition: width 0.4s ease-in-out;
+  position: static;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input#txtano:focus {
+  width: 25%;
+}
+
+p#caixa{
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+p#ano{
+  font-size: 22px;
+}
+input[type=button] {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #2e2f30;
+  border: 3px solid rgb(10, 10, 10);
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.05s;
+  padding: 15px;
+}
+
+input[type=button]:active {
+  background-color: #646668;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+
+section{
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+}
+
+div#res{
+  text-align: center;
+  padding: 20px;
+}
+
+img{
+  margin-top: 35px;
+  width: 275px;
+  height: 275px;
+  object-fit: fill;
+  border-radius: 50%;
+  border: 3px solid rgb(10, 10, 10);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.582);
+}
+
+footer{
+  color: aliceblue;
+  font-style: italic;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  padding-top: 20px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(190, 185, 185);
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #646668;
+}
+
+.container input:checked ~ .checkmark {
+  background-color:  #2e2f30;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
